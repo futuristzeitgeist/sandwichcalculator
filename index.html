@@ -1,0 +1,166 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <meta http-equiv="Content-Style-Type" content="text/css">
+  <title></title>
+  <meta name="Generator" content="Cocoa HTML Writer">
+  <meta name="CocoaVersion" content="2487.5">
+  <style type="text/css">
+    p.p1 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px Helvetica}
+    p.p2 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px Helvetica; min-height: 14.0px}
+  </style>
+</head>
+<body>
+<p class="p1">&lt;!DOCTYPE html&gt;</p>
+<p class="p1">&lt;html lang="en"&gt;</p>
+<p class="p1">&lt;head&gt;</p>
+<p class="p1">&lt;meta charset="UTF-8"&gt;</p>
+<p class="p1">&lt;title&gt;Edit Numbers with Ratio Preservation&lt;/title&gt;</p>
+<p class="p1">&lt;style&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>body {</p>
+<p class="p1"><span class="Apple-converted-space">        </span>text-align: center; /* Center align the content */</p>
+<p class="p1"><span class="Apple-converted-space">        </span>font-family: monospace; /* Ensures the ASCII art maintains its shape */</p>
+<p class="p1"><span class="Apple-converted-space">    </span>}</p>
+<p class="p1"><span class="Apple-converted-space">    </span>/* Hide the up and down arrows from the number input */</p>
+<p class="p1"><span class="Apple-converted-space">    </span>input[type="number"]::-webkit-inner-spin-button,</p>
+<p class="p1"><span class="Apple-converted-space">    </span>input[type="number"]::-webkit-outer-spin-button {</p>
+<p class="p1"><span class="Apple-converted-space">        </span>-webkit-appearance: none;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>margin: 0;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>}</p>
+<p class="p1"><span class="Apple-converted-space">    </span>input[type="number"] {</p>
+<p class="p1"><span class="Apple-converted-space">        </span>-moz-appearance: textfield; /* Firefox */</p>
+<p class="p1"><span class="Apple-converted-space">    </span>}</p>
+<p class="p1"><span class="Apple-converted-space">    </span>pre {</p>
+<p class="p1"><span class="Apple-converted-space">        </span>white-space: pre-wrap; /* Ensures the ASCII art does not break */</p>
+<p class="p1"><span class="Apple-converted-space">        </span>word-wrap: break-word; /* Ensures the ASCII art wraps properly */</p>
+<p class="p1"><span class="Apple-converted-space">    </span>}</p>
+<p class="p1">&lt;/style&gt;</p>
+<p class="p1">&lt;/head&gt;</p>
+<p class="p1">&lt;body&gt;</p>
+<p class="p1">&lt;pre&gt;</p>
+<p class="p2"><br></p>
+<p class="p1">&lt;head&gt;</p>
+<p class="p1">&lt;meta charset="UTF-8"&gt;</p>
+<p class="p1">&lt;meta name="viewport" content="width=device-width, initial-scale=3.0"&gt;</p>
+<p class="p1">&lt;title&gt;Yellow Box Paragraph&lt;/title&gt;</p>
+<p class="p1">&lt;style&gt;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>body {</p>
+<p class="p1"><span class="Apple-converted-space">    </span>margin: 20;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>padding: 20;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>display: flex;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>justify-content: center;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>align-items: center;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>height: 100vh;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>}</p>
+<p class="p2"><span class="Apple-converted-space">  </span></p>
+<p class="p2"><span class="Apple-converted-space">  </span></p>
+<p class="p1"><span class="Apple-converted-space">  </span>.content {</p>
+<p class="p1"><span class="Apple-converted-space">    </span>margin: auto;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>width: 990px;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>overflow: hidden;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>padding:0 5px 0 5px;</p>
+<p class="p1">}</p>
+<p class="p1">@media (max-width:1000px) {</p>
+<p class="p1"><span class="Apple-converted-space">    </span>.content{</p>
+<p class="p1"><span class="Apple-converted-space">        </span>padding:0;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>}</p>
+<p class="p1">}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">  </span>.container {</p>
+<p class="p1"><span class="Apple-converted-space">    </span>background-color: yellow;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>padding: 20%px;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>border: 2px solid black;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">  </span>p {</p>
+<p class="p1"><span class="Apple-converted-space">    </span>margin: 50;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>}</p>
+<p class="p1">&lt;/style&gt;</p>
+<p class="p1">&lt;/head&gt;</p>
+<p class="p1">&lt;body&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;p&gt;<span class="Apple-converted-space">  </span>&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;div class="container"&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;p&gt;Welcome to the SANDWICH CALCULATOR. This is a tool for making bulk sandwiches and encouraging sandwich-making parties. Change any of the values below to calculate ingredient ratios and sandwich outputs.&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">  </span>&lt;/div&gt;</p>
+<p class="p1">&lt;/body&gt;</p>
+<p class="p1">&lt;/html&gt;</p>
+<p class="p2"><br></p>
+<p class="p1">&lt;style&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>/* Hide the up and down arrows from the number input */</p>
+<p class="p1"><span class="Apple-converted-space">    </span>input[type="number"]::-webkit-inner-spin-button,</p>
+<p class="p1"><span class="Apple-converted-space">    </span>input[type="number"]::-webkit-outer-spin-button {</p>
+<p class="p1"><span class="Apple-converted-space">        </span>-webkit-appearance: none;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>margin: 0;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>}</p>
+<p class="p1"><span class="Apple-converted-space">    </span>input[type="number"] {</p>
+<p class="p1"><span class="Apple-converted-space">        </span>-moz-appearance: textfield; /* Firefox */</p>
+<p class="p1"><span class="Apple-converted-space">    </span>}</p>
+<p class="p1">&lt;/style&gt;</p>
+<p class="p1">&lt;body&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;div id="numberContainer"&gt;&lt;/div&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;p id="sandwichInfo"&gt;&lt;/p&gt;</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;script&gt;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>const originalNumbers = [1, 20, 11.4, 9]; // Initial numbers for Loaves of bread, Peanut butter (oz), Jelly (oz), Number of sandwiches</p>
+<p class="p1"><span class="Apple-converted-space">        </span>const labels = ["Loaves of bread", "Peanut butter (oz)", "Jelly (oz)", "Number of sandwiches"];</p>
+<p class="p1"><span class="Apple-converted-space">        </span>let inputs = [];</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">        </span>function setup() {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>const container = document.getElementById('numberContainer');</p>
+<p class="p1"><span class="Apple-converted-space">            </span>originalNumbers.forEach((number, index) =&gt; {</p>
+<p class="p1"><span class="Apple-converted-space">                </span>const input = document.createElement('input');</p>
+<p class="p1"><span class="Apple-converted-space">                </span>input.type = 'number';</p>
+<p class="p1"><span class="Apple-converted-space">                </span>input.value = formatNumber(number);</p>
+<p class="p1"><span class="Apple-converted-space">                </span>input.onchange = () =&gt; handleInputChange(index);</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">                </span>const label = document.createElement('label');</p>
+<p class="p1"><span class="Apple-converted-space">                </span>label.textContent = labels[index] + ": ";</p>
+<p class="p1"><span class="Apple-converted-space">                </span>label.appendChild(input);</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">                </span>const paragraph = document.createElement('p');</p>
+<p class="p1"><span class="Apple-converted-space">                </span>paragraph.appendChild(label);</p>
+<p class="p1"><span class="Apple-converted-space">                </span>container.appendChild(paragraph);</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">                </span>inputs.push(input);</p>
+<p class="p1"><span class="Apple-converted-space">            </span>});</p>
+<p class="p1"><span class="Apple-converted-space">            </span>updateSandwichInfo();</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">        </span>function handleInputChange(changedIndex) {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>const changedValue = parseFloat(inputs[changedIndex].value);</p>
+<p class="p1"><span class="Apple-converted-space">            </span>const originalValue = originalNumbers[changedIndex];</p>
+<p class="p1"><span class="Apple-converted-space">            </span>const ratio = changedValue / originalValue;</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">            </span>originalNumbers.forEach((originalNum, index) =&gt; {</p>
+<p class="p1"><span class="Apple-converted-space">                </span>if (index !== changedIndex) {</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>const newValue = originalNum * ratio;</p>
+<p class="p1"><span class="Apple-converted-space">                    </span>inputs[index].value = formatNumber(newValue); // Format number to remove unnecessary decimals</p>
+<p class="p1"><span class="Apple-converted-space">                </span>}</p>
+<p class="p1"><span class="Apple-converted-space">            </span>});</p>
+<p class="p1"><span class="Apple-converted-space">            </span>updateSandwichInfo();</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">        </span>function updateSandwichInfo() {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>const numSandwiches = parseFloat(inputs[3].value);</p>
+<p class="p1"><span class="Apple-converted-space">            </span>const timeNeeded = formatNumber(numSandwiches * 1.71);</p>
+<p class="p1"><span class="Apple-converted-space">            </span>const friendPower = Math.max(numSandwiches / 70, 1);</p>
+<p class="p1"><span class="Apple-converted-space">            </span>const friendText = friendPower === 1 ? "friend" : "friends"; // Check if friendPower is 1 to decide between 'friend' and 'friends'</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">            </span>const info = `To make ${numSandwiches} sandwiches, one friend will need on average ${timeNeeded} minutes. ` +</p>
+<p class="p2"><span class="Apple-converted-space">            </span></p>
+<p class="p1"><span class="Apple-converted-space">                         </span>`For an average sandwich-making party of 2 hours, to create ${numSandwiches} sandwiches, ` +</p>
+<p class="p1"><span class="Apple-converted-space">                         </span>`you will need ${formatNumber(friendPower)} ${friendText} total.`;</p>
+<p class="p1"><span class="Apple-converted-space">            </span>document.getElementById('sandwichInfo').textContent = info;</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">        </span>function formatNumber(num) {</p>
+<p class="p1"><span class="Apple-converted-space">            </span>return num % 1 === 0 ? num.toString() : num.toFixed(2);</p>
+<p class="p1"><span class="Apple-converted-space">        </span>}</p>
+<p class="p2"><br></p>
+<p class="p1"><span class="Apple-converted-space">        </span>setup();</p>
+<p class="p1"><span class="Apple-converted-space">    </span>&lt;/script&gt;</p>
+<p class="p2"><br></p>
+<p class="p1">&lt;/body&gt;</p>
+<p class="p1">&lt;/html&gt;</p>
+</body>
+</html>
